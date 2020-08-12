@@ -1,20 +1,6 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: mediumpurple;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +10,47 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sample-generator {
+  font-size: calc(5px + 1vmin);
+  margin: 8px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sample-generator input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: mediumpurple;
+  color: white;
+  transition: 0.3s all;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: calc(5px + 1vmin);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  width: 100%;
+  margin: 8px 0;
+  transition-duration: 0.4s;
+  font-size: calc(5px + 1vmin);
+  border: none;
+  background-color: pink;
+  color: rebeccapurple;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: lightpink;
+  color: white;
 }
