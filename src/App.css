@@ -1,18 +1,21 @@
 .App {
   text-align: center;
-  background-color: mediumpurple;
+  background-color: #9370db;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: larger;
   color: white;
 }
 
+header {
+  font-size: calc(10px + 2vmin);
+  padding: 30px;
+}
+
 .sample-generator {
-  font-size: calc(5px + 1vmin);
-  margin: 8px 0;
+  width: 25%;
 }
 
 .sample-generator input {
@@ -23,11 +26,11 @@
   color: white;
   transition: 0.3s all;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 10px 0 20px 0;
   display: inline-block;
   box-sizing: border-box;
   text-align: center;
-  font-size: calc(5px + 1vmin);
+  /*font-size: calc(5px + 1vmin);*/
 }
 
 input::-webkit-outer-spin-button,
@@ -40,17 +43,25 @@ button {
   width: 100%;
   margin: 8px 0;
   transition-duration: 0.4s;
-  font-size: calc(5px + 1vmin);
   border: none;
-  background-color: pink;
+  border-radius: 6px;
+  background-color: lightpink;
   color: rebeccapurple;
-  padding: 15px 32px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-size: larger;
 }
 
 button:hover {
-  background-color: lightpink;
+  background-color: pink;
   color: white;
+}
+
+/* Medium screens */
+@media all and (max-width: 900px) {
+  .sample-generator {
+    width: 80%;
+  }
 }

@@ -34,10 +34,12 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <header>🌼</header>
+                <header>
+                    <span role="img" aria-label="flower">🌼</span>
+                </header>
                 <Form className="sample-generator">
                     <label>
-                        Sum
+                        总数
                         <input
                             name="sum"
                             type="number"
@@ -47,7 +49,7 @@ class App extends Component {
                     </label>
                     <br/>
                     <label>
-                        Count
+                        抽样数
                         <input
                             name="count"
                             type="number"
@@ -57,14 +59,14 @@ class App extends Component {
                             onChange={this.handleInputChange}/>
                     </label>
                     <Button name="generate" onClick={() => this.onClick()}>
-                        Generate
+                        抽
                     </Button>
+                    <div className="samples">
+                        <p>
+                            {this.state.samples.join(", ")}
+                        </p>
+                    </div>
                 </Form>
-                <div className="samples">
-                    <p>
-                        {this.state.samples.join(", ")}
-                    </p>
-                </div>
             </div>
         );
     }
